@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;0,900;1,400&display=swap" rel="stylesheet">
+</head>
+<body>
+    <main>
+        <div class="container"></div>
+            <div class="height">
+                <h2>Calculadora IMC</h2>
+
+                <form id="imcform">
+                    <div class="form-input">
+                        <div class="form-adjusts">
+                            <label for="height">Altura(cm):</label>
+                            <input type="number" name="" id="height" placeholder="ex.:170" required>
+
+                        </div>
+
+                        <div class="form-adjusts">
+                            <label for="weight">Peso(kg):</label>
+                            <input type="number" name="" id="weight" placeholder="ex.:60" required>
+
+                        </div>
+                    </div>
+
+                    <div class="control-btns">
+                        <button id="calc-btn">Calculate</button>
+                        <button id="clear-btn">Clear</button>
+                    </div>
+                    <div class="result">
+                        <p class="imc-result">
+                            Aqui o resultado
+                        </p>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </main>
+    
+</body>
+</html>
