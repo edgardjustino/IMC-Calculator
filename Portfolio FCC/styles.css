@@ -1,0 +1,16 @@
+@media ( max-width: 800px){
+#welcome-section h1 {
+    background-color: black;
+}
+}
+
+#welcome-section {
+    height: 100vw;
+}
+
+#navbar {
+    top: 0;
+    left: 0;
+    height: 50px;
+    position: fixed;
+}

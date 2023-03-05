@@ -1,0 +1,45 @@
+body{
+    background: cornflowerblue;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+.box-nav{
+    background-color: gold;
+    border-radius: 15px;
+    padding: 5px;
+}
+
+.box{
+    background: rgba(0, 0, 0, 0.6);
+    border-radius: 15px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    padding: 15px;
+    color: white;
+    
+}
+
+input{
+    padding: 10px;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    font-size: 15px;
+    width: 70%;
+}
+
+button{
+    background-color: slateblue;
+    width: 90%;
+    padding: 10px;
+    color: white;
+    cursor: pointer;
+    transition: 0.5s; 
+}
+
+button:hover{
+    background-color: cornflowerblue;
+}
