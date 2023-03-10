@@ -1,19 +1,24 @@
-const calculate = document.querySelector('#calc-btn')
-const clear = document.querySelector('#clear-btn')
+const calculate = document.querySelector('#calc-btn');
+const clear = document.querySelector('#clear-btn');
+const result = document.querySelector('#result');
+const height = document.querySelector('#height').value;
+const weight = document.querySelector('#weight').value;
 
 // dividir o peso pela altura ao quadrado
 
+function clearInputs (){
+height = "";
+weight = "";
+}
+
 function calculateImc () {
-    const height = document.querySelector('#height').value;
-    const weight = document.querySelector('#weight').value;
+    
     height / (weight*weight);
 
-    addEventListener.
+    calculate.addEventListener('click', calculateImc);
 }
 
-calculateImc ()
-
-function clearInputs () {
-
-}
-clearInputs ()
+clear.addEventListener('click', (clearInputs) => {
+    clear.preventDefault();
+    clearInputs();
+});
