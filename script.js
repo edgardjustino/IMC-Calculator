@@ -1,12 +1,15 @@
-const height = (document.querySelector('#height').value)/100;
-const weight = document.querySelector('#weight').value;
-const clear = document.querySelector('#clear-btn');
+// const height = (document.querySelector('#height').value)/100;
+// const weight = document.querySelector('#weight').value;
+// const clear = document.querySelector('#clear-btn');
 const calculate = document.querySelector('#calc-btn');
-const result = document.querySelector('#result');
+// const result = document.querySelector('#result');
 
 function imc () {
     
-    if (weight !== '' && height !== ''){
+    if (height !== '' && weight !== ''){
+        let height = (document.querySelector('#height').value)/100;
+        let weight = document.querySelector('#weight').value;
+        const result = document.querySelector('#result');
     
         const valorIMC = (weight / (height * height)).toFixed(1);
 
@@ -29,13 +32,28 @@ function imc () {
         result.textContent = `Seu IMC é ${valorIMC} e você está ${classificacao}`;
     } else {
         result.textContent = 'Por favor, preencha todos os campos.';
-    }
+    };
+
 }
 
-clear.addEventListener('click', ()=>{
-     weight = '';
-     height = '';
-});
+function clearInputs (){
+    const clear = document.querySelector('#clear-btn');
+    clear.addEventListener('click', ()=>{
+        weight = '';
+        height = '';
+    })
+   };
+
+
+
+// function clearInputs (){
+//     const clear = document.querySelector('#clear-btn');
+//    }
+
+//    clear.addEventListener('click', ()=>{
+//     weight = '';
+//     height = '';
+// }); 
 
 calculate.addEventListener('click', imc);
 
