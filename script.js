@@ -36,14 +36,6 @@ function imc () {
 
 }
 
-function clearInputs (){
-    const clear = document.querySelector('#clear-btn');
-    clear.addEventListener('click', ()=>{
-        weight = '';
-        height = '';
-    })
-   };
-
 
 
 // function clearInputs (){
@@ -57,6 +49,13 @@ function clearInputs (){
 
 calculate.addEventListener('click', imc);
 
+function clearInputs (){
+    const clear = document.querySelector('#clear-btn');
+    clear.addEventListener('click', ()=>{
+        weight = '';
+        height = '';
+    })
+   };
+
 //fazer o botão clear funcionar/make the clear button work
-//stop refreshing after clicking the buttons
-//actually show the results
+//dizer que tem um campo vazio
