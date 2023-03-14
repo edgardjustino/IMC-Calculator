@@ -1,4 +1,4 @@
-const height = document.querySelector('#height')*(100).value;
+const height = (document.querySelector('#height').value)/100;
 const weight = document.querySelector('#weight').value;
 const clear = document.querySelector('#clear-btn');
 const calculate = document.querySelector('#calc-btn');
@@ -32,4 +32,13 @@ function imc () {
     }
 }
 
+clear.addEventListener('click', ()=>{
+     weight = '';
+     height = '';
+});
+
 calculate.addEventListener('click', imc);
+
+//fazer o botão clear funcionar/make the clear button work
+//stop refreshing after clicking the buttons
+//actually show the results
