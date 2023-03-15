@@ -7,8 +7,8 @@ const calculate = document.querySelector('#calc-btn');
 function imc () {
     
     if (height !== '' && weight !== ''){
-        let height = (document.querySelector('#height').value)/100;
-        let weight = document.querySelector('#weight').value;
+        const height = (document.querySelector('#height').value)/100;
+        const weight = document.querySelector('#weight').value;
         const result = document.querySelector('#result');
     
         const valorIMC = (weight / (height * height)).toFixed(1);
@@ -28,12 +28,10 @@ function imc () {
         } else {
             classificacao = 'com obesidade grau III. Cuidado!';
         }
-
         result.textContent = `Seu IMC é ${valorIMC} e você está ${classificacao}`;
     } else {
-        result.textContent = 'Por favor, preencha todos os campos.';
-    };
-
+        result.textContent = 'Preencha todos os campos.'; // why this result isn't a const??
+    }
 }
 
 
@@ -48,14 +46,6 @@ function imc () {
 // }); 
 
 calculate.addEventListener('click', imc);
-
-function clearInputs (){
-    const clear = document.querySelector('#clear-btn');
-    clear.addEventListener('click', ()=>{
-        weight = '';
-        height = '';
-    })
-   };
 
 //fazer o botão clear funcionar/make the clear button work
 //dizer que tem um campo vazio
