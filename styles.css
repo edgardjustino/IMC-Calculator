@@ -23,6 +23,7 @@ main {
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: row;
 }
 
 .container{
@@ -98,6 +99,7 @@ margin-bottom: 1rem;
     display: flex;
     justify-content: space-between;
     margin-top: 1.8rem;
+    margin-bottom: 20px;
     gap: 1rem;
 }
 
@@ -131,9 +133,9 @@ button:hover {
 
 #result{
     text-align: center;
-    margin: 35px;
+    margin-top: 30px;
     color: #fff;
-    padding: 20px;
+    /* padding: 25px; */
     box-sizing: border-box;
     user-select: none;
     flex: 1;
